@@ -1,0 +1,61 @@
+.scroll-wrapper {
+    position: relative;
+    display: flex;
+    height: 300px;
+    width: 180px;
+  }
+  
+  .scroll-bar {
+    position: relative;
+    width: 38px;
+    background-color: #f1f1f1;
+    border-radius: 24px;
+  }
+  
+  .scroll-thumb {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    transition: box-shadow 0.2s, border-color 0.2s;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .option-list {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    width: calc(100% - 20px);
+  }
+  
+  .option-item {
+    flex-grow: 1;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer; 
+    transition: background-color 0.2s ease;
+    align-items: flex-start;
+  }
+  
+  .option-title {
+    font-weight: bold;
+  }
+  
+  .option-subtitle {
+    color: grey;
+    font-size: 14px;
+  }
+  
+  .option-item.active {
+    background-color: #e0e0e0;
+  }
+  
+  .option-item.active .option-title {
+    color: inherit;
+  }
+  

@@ -1,0 +1,40 @@
+.line-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    width: 100% - 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 5px;
+  }
+  
+  .berry-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .berry-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .berry-name {
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  .flavors {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .flavor {
+    background-color: #e0e0e0;
+    padding: 5px 10px;
+    border-radius: 28px;
+    font-size: 14px;
+  }
+  
